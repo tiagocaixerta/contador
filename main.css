@@ -1,3 +1,4 @@
+/* CSS padrão para desktop */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -109,4 +110,61 @@ footer {
     color: white;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+    #timer {
+        font-size: 1.5rem;
+        flex-direction: column;
+    }
+
+    #timer span {
+        font-size: 2rem;
+    }
+
+    .event-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .event-item img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Responsividade para smartphones */
+@media (max-width: 640px) {
+    header {
+        padding: 1rem;
+    }
+
+    .countdown {
+        margin: 1rem 0;
+    }
+
+    #timer {
+        font-size: 1.2rem;
+    }
+
+    #timer span {
+        font-size: 1.5rem;
+    }
+
+    .event-details {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    .event-item {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .event-item img {
+        max-width: 100%;
+        margin-right: 0;
+    }
 }
